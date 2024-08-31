@@ -1,0 +1,58 @@
+Command: synth_design -rtl -top SPI_Wrapper
+Starting synth_design
+Using part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2338.938 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SPI_Wrapper' [C:/Project2_SPI/Wrapper.v:1]
+	Parameter MEM_DEPTH bound to: 256 - type: integer 
+	Parameter ADDR_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SPI' [C:/Project2_SPI/SPI.v:1]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter CHK_CMD bound to: 1 - type: integer 
+	Parameter WRITE bound to: 2 - type: integer 
+	Parameter READ_ADD bound to: 3 - type: integer 
+	Parameter READ_DATA bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "one_hot" *) [C:/Project2_SPI/SPI.v:15]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Project2_SPI/SPI.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'SPI' (1#1) [C:/Project2_SPI/SPI.v:1]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [C:/Project2_SPI/RAM.v:1]
+	Parameter MEM_DEPTH bound to: 256 - type: integer 
+	Parameter ADDR_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (2#1) [C:/Project2_SPI/RAM.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_Wrapper' (3#1) [C:/Project2_SPI/Wrapper.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2338.938 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2338.938 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2338.938 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Project2_SPI/Wrapper_Basys3.xdc]
+Finished Parsing XDC File [C:/Project2_SPI/Wrapper_Basys3.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2338.938 ; gain = 0.000
+11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2338.938 ; gain = 0.000

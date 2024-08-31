@@ -1,0 +1,73 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Aug 23 01:39:01 2023
+| Host         : Dell-G5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SPI_Wrapper_control_sets_placed.rpt
+| Design       : SPI_Wrapper
+| Device       : xc7a35ti
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     6 |
+| Unused register locations in slices containing registers |    20 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      8 |            1 |
+|     12 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              12 |            2 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              46 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+------------------------------+------------------------+------------------+----------------+
+|               Clock Signal              |         Enable Signal        |    Set/Reset Signal    | Slice Load Count | Bel Load Count |
++-----------------------------------------+------------------------------+------------------------+------------------+----------------+
+|  SPI_Slave/address_recieved_reg_i_2_n_0 |                              |                        |                1 |              2 |
+|  clk_IBUF_BUFG                          | SPI_Slave/MISO_i_2_n_0       | SPI_Slave/MISO_i_1_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG                          |                              |                        |                2 |              8 |
+|  clk_IBUF_BUFG                          |                              | Async_RAM/SR[0]        |                2 |             12 |
+|  clk_IBUF_BUFG                          | SPI_Slave/E[0]               | Async_RAM/SR[0]        |                1 |             16 |
+|  clk_IBUF_BUFG                          | SPI_Slave/rx_data[9]_i_1_n_0 | SPI_Slave/MISO_i_1_n_0 |                2 |             28 |
++-----------------------------------------+------------------------------+------------------------+------------------+----------------+
+
+

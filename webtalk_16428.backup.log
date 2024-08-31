@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Aug 23 01:33:32 2023
+# Process ID: 16428
+# Current directory: C:/Project2_SPI
+# Command line: wbtcv.exe -mode batch -source C:/Project2_SPI/project2_seq.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/Project2_SPI/webtalk.log
+# Journal file: C:/Project2_SPI\webtalk.jou
+#-----------------------------------------------------------
+source C:/Project2_SPI/project2_seq.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 54.074 ; gain = 1.184
+INFO: [Common 17-206] Exiting Webtalk at Wed Aug 23 01:33:41 2023...
